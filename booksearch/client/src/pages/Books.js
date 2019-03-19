@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DeleteBtn from "../components/DeleteBtn";
+import Button from "../components/Button";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 import { Input, FormBtn } from "../components/Form";
 import Book from "../components/Book";
-import Book2 from "../components/Book2";
+import Updated from "../components/Updated";
 require('dotenv').config();
 
 class Books extends Component {
@@ -129,7 +129,7 @@ class Books extends Component {
             link={book.link}
             key={book.id}  
             saveBook={this.handleSave}>
-            <DeleteBtn />
+            <Button />
           </Book>
         ))}
           </Col>
@@ -140,7 +140,7 @@ class Books extends Component {
             {this.state.books.length ? (
               <List>
                 {this.state.books.map(book => (
-                  <Book2
+                  <Updated
                   id={book._id}
                   image={book.image}
                   title={book.title}
