@@ -99,7 +99,7 @@ class Books extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Do Are Looking For?</h1>
+              <h1>Hey! Want to find some books? Search below!</h1>
             </Jumbotron>
             <form>
               <Input
